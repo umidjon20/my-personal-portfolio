@@ -1,9 +1,21 @@
 #root {
-  max-width: 1280px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+&::before{
+    content: '';
+    background: url(./assets/images/background.jpg) no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
+}
+  
 }
 
 // h1{
@@ -16,12 +28,5 @@
 // img{
 //   width: 400px;
 // }
-main{
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-  flex-shrink: 1;
-  background: url(./assets/images/background.jpg) no-repeat;
-  opacity: 0.8;
-}
+
 

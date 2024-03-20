@@ -1,0 +1,19 @@
+
+    .contact-btn{
+        cursor: pointer;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background-color: var(--btn-color);
+        color:var(--primary-color);
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: 0.3s;
+
+        flex-shrink: 0;
+        &:hover{
+            background-color: var(--btn-hover);
+        }
+    }
