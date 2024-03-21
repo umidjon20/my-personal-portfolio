@@ -2,6 +2,8 @@ import './About.scss'
 
 export function About(){
     return(
-        <h1>About</h1>
+        <main>
+            <h1>About</h1>
+        </main>
     )
 }

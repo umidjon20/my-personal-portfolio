@@ -1,1 +1,1 @@
-export { Header } from "./Header/Header";
+export {PageLayout} from './Layout/PageLayout'

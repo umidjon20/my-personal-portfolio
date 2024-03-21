@@ -2,6 +2,8 @@ import './Projects.scss'
 
 export function Projects(){
     return(
-        <h1>Projects</h1>
+       <main>
+         <h1>Projects</h1>
+       </main>
     )
 }
