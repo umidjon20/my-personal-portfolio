@@ -5,16 +5,16 @@ export function NavLink(){
     return(
         <ul className="nav-link">
             <li>
-                Home
+                <Link to={'/home'}>Home</Link>
             </li>
             <li>
-                About Me
+                <Link to={'/about'}>About Me</Link>
             </li>
             <li>
-                Projects
+                <Link to={'/projects'}>Projects</Link>
             </li>
             <li>
-                Contact
+                <Link to={'/contact'}>Contact</Link>
             </li>
         </ul>
     )
