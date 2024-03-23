@@ -1,28 +1,100 @@
-.mode{
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
-    .mode-color{
-        cursor: pointer;
-        width: 45px;
-        height: 20px;
-        border-radius: 10px;
-        background-color: #8F19E8;
-        position: relative;
-        .circle{
-            position: absolute;
-            width: 18px;
-            height: 16px;
-            left: 3px;
-            top: 2px;
-            border-radius:50%;
-            background-color: #fff;
-            transition: 0.4s;
-        }
-    }
-    span{
-        svg{
-            stroke: var(--meaning-color);
-        }
-    }
-}
+/* The switch - the box around the slider */
+#theme-toggle-button {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  #toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  #container,
+  #patches,
+  #stars,
+  #button,
+  #sun,
+  #moon,
+  #cloud {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+  }
+  
+  /* night sky background */
+  #toggle:checked + svg #container {
+    fill: #83cbd8;
+  }
+  
+  /* move button to right when checked */
+  #toggle:checked + svg #button {
+    transform: translate(28px, 2.333px);
+  }
+  
+  /* show/hide sun and moon based on checkbox state */
+  #sun {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #sun {
+    opacity: 1;
+  }
+  
+  #moon {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #moon {
+    opacity: 0;
+  }
+  
+  /* show or hide background items on checkbox state */
+  #cloud {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #cloud {
+    opacity: 1;
+  }
+  
+  #stars {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #stars {
+    opacity: 0;
+  }
+  
+// .mode{
+//     display: flex;
+//     align-items: center;
+//     column-gap: 12px;
+//     .mode-color{
+//         cursor: pointer;
+//         width: 45px;
+//         height: 20px;
+//         border-radius: 10px;
+//         background-color: #8F19E8;
+//         position: relative;
+//         .circle{
+//             position: absolute;
+//             width: 18px;
+//             height: 16px;
+//             left: 3px;
+//             top: 2px;
+//             border-radius:50%;
+//             background-color: #fff;
+//             transition: 0.4s;
+//         }
+//     }
+//     span{
+//         svg{
+//             stroke: var(--meaning-color);
+//         }
+//     }
+// }
