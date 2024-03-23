@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { NavLink } from '../NavLink/NavLink'
 import { ContactBtn } from '../ContactBtn/ContactBtn'
+import { Mode } from '../Mode/Mode'
 import './Header.scss'
 export function Header() {
   return (
@@ -16,9 +17,13 @@ export function Header() {
                 <nav>
                     <NavLink />
                 </nav>
-                <ContactBtn />
+                {/* <ContactBtn /> */}
+                <div>
+                    <button className='btn btn-style'>contact me</button>
+                </div>
             </div>
         </div>
+        <Mode />
     </header>
   )
 }
