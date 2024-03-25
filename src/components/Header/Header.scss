@@ -1,7 +1,11 @@
 header{
-    position: relative;
+    .mode{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
     .header{
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -9,20 +13,13 @@ header{
             display: flex;
             align-items: center;
             column-gap: 10px;
-            position: relative;
-            .circle{
-                width: 24px;
-                height: 24px;
-                background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,252,45,0.9527186761229315) 100%);
-                border-radius:50%;
-            }
+
             .logotip{
                 cursor: pointer;
                 font-size: 28px;
                 letter-spacing: 2px;
                 font-weight: 900;
                 color:var(--text-color);
-                position: absolute;
                 left: 35px;
                 transform: rotate(9deg);
                 .clr{

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    {/* <Header /> */}
+ 
     
     <Routes>
       <Route element={<Navigate to = {'/home'}/>} path={'/'} ></Route> 
@@ -15,8 +15,8 @@ function App() {
   
         <Route element={<Home/>} path='home' ></Route>
         <Route element={ <About/>} path='about'></Route>
-        <Route element={ <Projects/>} path='projects'></Route>
-        <Route element={ <Contact/>} path='Contact'></Route>
+        <Route element={ <Projects/>} path='work'></Route>
+        <Route element={ <Contact/>} path='contact'></Route>
         <Route element={<NotFound/>} path={'*'}></Route>
     
       </Route>
