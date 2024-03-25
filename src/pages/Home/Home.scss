@@ -1,3 +1,110 @@
-h1{
-    color: #fff;
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .home-page{
+
+        display: flex;
+        // justify-content: space-between;
+        gap: 50px;
+        align-items: center;
+        .home-page-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 70%;
+            gap: 30px;
+            h2{
+                font-size: 64px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: var(--text-color);
+            }
+            h3{
+                font-size: 56px;
+                background: -webkit-linear-gradient(#db1802d3, #0c71e4);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p{
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: 1px;
+                width: 50%;
+                color: var(--text-color);
+            }
+            .buttons{
+                display: flex;
+                gap: 40px;
+            }
+        }
+        .home-page-pr-image{
+          position: relative;
+            .shadow-img{
+                // background: url(../../assets/icons/blob.svg) no-repeat;
+                .image-cover{
+                 position: relative;
+                    img{
+                        position: absolute;
+                        top: 50%;
+                        left:50%;
+                        transform: translate(-50% , -50%);
+                        // width: 300px;
+                        border-radius: 50%;
+                    }
+                    .spin{
+                        position: relative;
+                        display:inline-block;
+                        width: 340px;
+                        height: 340px;
+                        border: 2px solid #34495E;
+                        border-radius: 50%;
+                        animation: spin 0.75s infinite linear;
+                        &::before,
+                        &::after{
+                            left: -3px;
+                            top: -1.4%;
+                            display: none;
+                            position: absolute;
+                            content: '';
+                            width: inherit;
+                            height: inherit;
+                            border: inherit;
+                            border-radius: inherit;
+                        }
+
+                        
+                        &::before,
+                        &::after {
+                        display: inline-block;
+                        border-color: transparent;
+                        border-top-color: red;
+                        animation-duration: 1.4s;
+                        }
+
+                        &::before {
+                        transform: rotate(180deg);
+                        }
+
+                        &::after {
+                        transform: rotate(240deg);
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+    }
 }

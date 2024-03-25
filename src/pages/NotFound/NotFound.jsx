@@ -2,8 +2,8 @@ import './NotFound.scss'
 
 export function NotFound(){
     return(
-        <main>
-            <h1>NotFound</h1>
-        </main>
+        <section>
+            <h2>NotFound</h2>
+        </section>
     )
 }

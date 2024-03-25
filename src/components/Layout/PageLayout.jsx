@@ -6,7 +6,9 @@ export function PageLayout(){
     return(
         <>
         <Header />
+        <main>
         <Outlet />
+        </main>
         <Footer />
         </>
     )

@@ -2,8 +2,8 @@ import './About.scss'
 
 export function About(){
     return(
-        <main>
+        <section>
             <h1>About</h1>
-        </main>
+        </section>
     )
 }
