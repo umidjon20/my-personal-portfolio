@@ -25,13 +25,16 @@ body{
     height: 100vh;
     font-family: "Roboto", sans-serif;
     background-color: var(--primary-color);
+    overflow-x: hidden;
     
 }
 main{
-    position: relative;
+    // position: relative;
     flex-grow: 1;
     width: 100%;
     min-height:calc(100vh - 369px) ;
+    // display: flex;
+    // align-items: center;
   }
 li{
     list-style: none;
@@ -58,6 +61,7 @@ a{
 }
 
 .btn{
+    flex-shrink: 0;
     padding: 10px 22px;
     font-weight: 500;
     background: transparent;
