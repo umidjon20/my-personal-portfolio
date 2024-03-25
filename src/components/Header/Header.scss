@@ -9,30 +9,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            display: flex;
-            align-items: center;
-            column-gap: 10px;
 
-            .logotip{
-                cursor: pointer;
-                font-size: 28px;
-                letter-spacing: 2px;
-                font-weight: 900;
-                color:var(--text-color);
-                left: 35px;
-                transform: rotate(9deg);
-                .clr{
-                    padding-bottom: 30px;
-                    color: #0303ff ;
-                }
-                .text-gr{
-                    background: -webkit-linear-gradient(#f40101e8, #0618e0aa);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
-        }
         .nav-bar{
             display: flex;
             align-items: center;

@@ -10,17 +10,12 @@ export function Header() {
             <Mode />
         </div>
         <div className="header container">
-            <div className="logo">
-                <Logotip />
-                <div className="logotip">
-                    <span className='clr'>D</span><span className="text-gr">ev</span>.
-                </div>
-            </div>
+            <Logotip /> 
             <div className="nav-bar">
                 <nav>
                     <NavLink />
                 </nav>
-                {/* <ContactBtn /> */}
+              
                 <div>
                     <button className='btn btn-style'>contact me</button>
                 </div>
