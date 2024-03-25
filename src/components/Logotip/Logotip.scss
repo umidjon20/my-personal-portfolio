@@ -1,4 +1,9 @@
-.circle{
+
+.logo{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  .circle{
     width: 40px;
     aspect-ratio: 1;
     display: grid;
@@ -28,6 +33,25 @@
     // height: 24px;
     // background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,252,45,0.9527186761229315) 100%);
     // border-radius:50%;
+}
+.logotip{
+  cursor: pointer;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color:var(--text-color);
+  left: 35px;
+  transform: rotate(9deg);
+  .clr{
+      padding-bottom: 30px;
+      color: #0303ff ;
+  }
+  .text-gr{
+      background: -webkit-linear-gradient(#f40101e8, #0618e0aa);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
 }
 @keyframes l16 { 
     100%{transform: rotate(1turn)}
