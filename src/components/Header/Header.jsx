@@ -5,10 +5,11 @@ import { Logotip } from '../Logotip/Logotip'
 import './Header.scss'
 export function Header() {
   return (
-    <header>
-        <div className="mode container">
+    <>
+        {/* <div className="mode container">
             <Mode />
-        </div>
+        </div> */}
+    <header>
         <div className="header container">
             <Logotip /> 
             <div className="nav-bar">
@@ -17,11 +18,16 @@ export function Header() {
                 </nav>
               
                 <div>
-                    <button className='btn btn-style'>contact me</button>
+                        <Link to={'/contact'}>
+                            <button className='btn btn-style'>    
+                            Contact Me
+                            </button>
+                        </Link>
                 </div>
             </div>
         </div>
     </header>
+    </>
   )
 }
 

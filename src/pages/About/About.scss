@@ -1,3 +1,130 @@
-h1{
+ .about-section{
+    
     color: #fff;
-}
+    .about-section-info{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .about-section-inner{
+         font-size: 48px;
+         letter-spacing: 1px;
+         font-weight: 700;
+         position: relative;
+         &::before{
+            content: '';
+            width: 70px;
+            height: 5px;
+            background-color: rgb(236, 10, 10);
+            position: absolute;
+            bottom: -8px;
+            border-radius: 5px;
+         }
+         &::after{
+            content:'';
+            width: 50px;
+            height: 5px;
+            background-color: rgb(236, 10, 10);
+            position: absolute;
+            left: 0;
+            bottom: -18px;
+            border-radius: 5px;
+         }
+      }
+      h3{
+         font-size: 38px;
+         font-weight: 600;
+         letter-spacing: 1px;
+         line-height: 26px;
+         margin-top: 25px;
+         text-align: center;
+         span{
+            color:rgba(0, 140, 255, 0.783);
+         }
+         
+      }
+      .about-me{
+         font-size: 20px;
+         letter-spacing: 1px;
+         font-weight: 400;
+         line-height: 26px;
+         text-align: center;
+      }
+      .about-section-my-skills{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 25px 0;
+
+       .personal-info{
+         
+         .about-content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            .flex{
+               display: flex;
+               flex-direction: column;
+               row-gap: 10px;
+               letter-spacing: 1px;
+               .color-head{
+                  font-size: 20px;
+                  font-weight: 500;
+                 
+                  
+               }
+               .color-b{
+                  font-size: 16px;
+                  opacity: 0.5;
+               }
+
+            }
+         }
+       }
+         .my-skills{
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            .row{
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+               .skills-item{
+                  
+                  flex: 0 0 100%;
+                  max-width: 100%;
+                  width: 250px;
+                  flex-direction: column;
+                  row-gap: 10px;
+                  h5{
+                     font-size: 16px;
+                     font-weight: 600;
+                     line-height: 40px;
+                  }
+                  .progress{
+                     height: 7px;
+                     width: 100%;
+                     border-radius: 4px;
+                     background-color: #0198caaf;
+                     position: relative;
+                     .progress-in{
+                        
+                        background-color: rgba(0, 255, 34, 0.581);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                     }
+                     .skill-percent{
+                        position: absolute;
+                        right: 0;
+                        top: -30px;
+                        font-weight: 400;
+                     }
+                  }
+               }
+            }
+         }
+      }
+    }
+   }
+

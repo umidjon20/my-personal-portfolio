@@ -46,7 +46,7 @@ export function Footer(){
                         </a>
                     </span>
                     <span>
-                        <a href="#">
+                        <a href="https://www.instagram.com/front_amirqulov_end/">
                             <Instagram />
                         </a>
                     </span>
@@ -56,7 +56,7 @@ export function Footer(){
                         </a>
                     </span>
                     <span>
-                        <a href="#">
+                        <a href="github.com/umidjon20">
                             <Github />
                         </a>
                     </span>

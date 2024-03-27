@@ -1,10 +1,15 @@
 import { TypeAnimation } from 'react-type-animation'
+import { Link } from 'react-router-dom'
+import {About} from  '../index'
 import PersonalImg from '../../assets/images/photo.webp'
+
 import './Home.scss'
 
 export function Home(){
     return(
-       <section>
+      <>
+
+       <section className='home-section'>
         <div className="home-page container">
             <div className="home-page-info">
               <h2>
@@ -13,8 +18,8 @@ export function Home(){
               <h3>
                 <TypeAnimation 
                 sequence={[
-                  // "I'm a Frontend developer",
-                  2000,
+                  "I'm a Frontend developer",
+                  1000,
                   ''
                 ]}
                 speed={40}
@@ -28,7 +33,11 @@ export function Home(){
               You will not regret choosing me, Inshallah
               </p>
               <div className="buttons">
-                <button className='btn btn-style'>Contact me</button>
+              <Link to={'/contact'}>
+                            <button className='btn btn-style'>    
+                            Contact Me
+                            </button>
+                        </Link>
                 <button className='btn btn-style'>Download Cv</button>
               </div>
             </div>
@@ -42,7 +51,10 @@ export function Home(){
             </div>
         </div>
 
-
        </section>
+                <About />
+                
+                </>
     )
 }
+
